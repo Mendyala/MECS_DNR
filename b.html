@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.slideshow{
+width:350px;
+height:300px;
+}
+img{
+widh:100%;
+height:100%;
+object-fit:cover;
+}
+</style>
+
+</head>
+<body>
+<hd color="red" width="50%" size="30"/>
+<div class="w3-content" style="max-width:1000px" "height=1000">
+<img class="mySlides" src="mecskings.jpg" style="width:100%" align ="center">
+
+  </div>
+    <img class="mySlides" src="class.jpg" style="width:100%" align="center">
+
+  </div>
+
+  
+
+  <img class="mySlides" src="5.jpg" style="width:100%">
+</div>
+ <img class="mySlides" src="s4.jpeg" style="width:100%">
+<img class="mySlides" src="11.jpg" style="width:100%">
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 3000); 
+}
+</script>
+
+
+</body>
+</html>
